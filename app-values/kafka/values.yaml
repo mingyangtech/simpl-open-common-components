@@ -1,4 +1,7 @@
 kafka:
+  image:
+    tag: 8.0.0
+    initTag: 3.0.0
   replicas: 3
   topic: 
     replicas: 2
