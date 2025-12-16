@@ -408,7 +408,7 @@ spec:
             bootstrapServer: http://kafka.{{ .Values.cluster.namespace }}.svc.cluster.local:9092
         {{- if .Values.mailpit.enabled }}
           mail:
-            smtpHost: mailpit-{{ .Values.cluster.namespace }}-smtp
+            smtpHost: mailpit-{{ .Release.Namespace }}-smtp
             smtpUser: smtp
         {{- end }}
         {{- if .Values.notification.resources }}
